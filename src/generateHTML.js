@@ -6,9 +6,8 @@ const managerCard = (data) => {
   </h2>
         <div class="card-body">
             <strong>ID: ${data.id}</strong>
-           
-            <p>Email: ${data.email}</p>
-            <p>Github: ${data.officeNumber}</p>
+            <p>Email: <a href="mailto:${data.email}">${data.email}</a></p>
+            <p>Office Number: ${data.officeNumber}</p>
         </div>
     </div>`;
 };
@@ -20,10 +19,9 @@ const engineerCard = (data) => {
     <strong>Engineer</strong>
   </h2>
         <div class="card-body">
-            <strong>ID: ${data.id}</strong>
-           
-            <p>Email: ${data.email}</p>
-            <p>Github: ${data.github}</p>
+            <strong>ID: ${data.id}</strong> 
+            <p>Email: <a href="mailto:${data.email}">${data.email}</a></p>
+            <p>Github: <a href="https://github.com/${data.github}" target="_blank">${data.github}</a></p>
         </div>
     </div>`;
 };
@@ -38,7 +36,7 @@ const internCard = (data) => {
 
     <div class="card-body">
     <strong>ID: ${data.id}</strong>
-    <p>Email: ${data.email}</p>
+    <p>Email: <a href="mailto:${data.email}">${data.email}</a></p>
     <p>School: ${data.school}</p>
     </div>
     </div>`;

@@ -56,3 +56,7 @@ h1 {
   display: block;
   margin-bottom: 4px;
 }
+
+.card .card-body a{
+  display: inline;
+}
